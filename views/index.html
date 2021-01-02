@@ -110,185 +110,183 @@
       </a-asset>
       
       
-    <!--wood floor-->
-    <a-plane static-body height="20" width="20" rotation="-90 0 0" position="0 .5 0" src="#floor" repeat="4 2"></a-plane>
+      <!--wood floor-->
+      <a-plane static-body height="20" width="20" rotation="-90 0 0" position="0 .5 0" src="#floor" repeat="4 2"></a-plane>
 
-    <!--carpet-->
-    <a-plane static-body height="9" width="5" rotation="-90 0 0" position="5 .6 0" src="#carpet" repeat="1 1"></a-plane>
-    
-    <!--Poly by Google-->
-    <a-collada-model dynamic-body src="https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FDining_table.dae?1535610651919" position="0 1 0" scale="2 2 2" rotation="0 190 0"></a-collada-model>
-    
-    <!--art by Bruno Oliveira-->
-    <a-obj-model dynamic-body obj-model="obj: https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2Fmodel.obj?1535669172689; mtl: https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2Fmaterials.mtl?1535669174809" position="0 3.85 -.1" rotation="0 180 0" scale=".7 .6 .7"></a-obj-model>
+      <!--carpet-->
+      <a-plane static-body height="9" width="5" rotation="-90 0 0" position="5 .6 0" src="#carpet" repeat="1 1"></a-plane>
+      
+      <!--Poly by Google-->
+      <a-collada-model dynamic-body src="https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FDining_table.dae?1535610651919" position="0 1 0" scale="2 2 2" rotation="0 190 0"></a-collada-model>
+      
+      <!--art by Bruno Oliveira-->
+      <a-obj-model dynamic-body obj-model="obj: https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2Fmodel.obj?1535669172689; mtl: https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2Fmaterials.mtl?1535669174809" position="0 3.85 -.1" rotation="0 180 0" scale=".7 .6 .7"></a-obj-model>
 
-    <!--Poly by Google--->
-    <a-obj-model dynamic-body obj-model="https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FTable_Large_Rectangular_01.obj?1535669547580; mtl: https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FTable_Large_Rectangular_01.mtl?1535669549533" position="0 5 -.1" rotation="0 180 0" scale="3 3 3"></a-obj-model>
-    
-    <!--seat set 1-->
-    <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="-3 0 -8" repeat="1 1"></a-box>
-    
-    <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="3 0 -8" repeat="1 1"></a-box>
-    
-    <!--seat set 2-->
-    <a-entity rotation = "0 90 0">
-    <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="-3 0 -8" repeat="1 1"></a-box>
-    
-    <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="3 0 -8" repeat="1 1"></a-box>
-    </a-entity>
-      <!--invisible wall-->
-    <a-entity rotation = "0 180 0">
-    <a-box static-body material="transparent: true; opacity: 0"  height="3" width="23" depth="2" rotation="-90 0 0" position="-4 0 -9.5" repeat="1 1"></a-box>
+      <!--Poly by Google--->
+      <a-obj-model dynamic-body obj-model="https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FTable_Large_Rectangular_01.obj?1535669547580; mtl: https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FTable_Large_Rectangular_01.mtl?1535669549533" position="0 5 -.1" rotation="0 180 0" scale="3 3 3"></a-obj-model>
+      
+      <!--seat set 1-->
+      <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="-3 0 -8" repeat="1 1"></a-box>
+      
+      <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="3 0 -8" repeat="1 1"></a-box>
+      
+      <!--seat set 2-->
+      <a-entity rotation = "0 90 0">
+      <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="-3 0 -8" repeat="1 1"></a-box>
+      
+      <a-box static-body src="#fancywood" height="1" width="4" depth="2.5" rotation="-90 0 0" position="3 0 -8" repeat="1 1"></a-box>
+      </a-entity>
+        <!--invisible wall-->
+      <a-entity rotation = "0 180 0">
+      <a-box static-body material="transparent: true; opacity: 0"  height="3" width="23" depth="2" rotation="-90 0 0" position="-4 0 -9.5" repeat="1 1"></a-box>
 
-<a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+  <a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+        
+      </a-entity>
+      <!--wall 1-->
+      <a-box static-body src="#wall" height="20" width="1" depth="15" rotation="-90 0 0" position="10 .55 0" repeat="5 5"></a-box>
+      
+      <!--wall 2-->
+      <a-box static-body height="20" width="1" depth="15" rotation="-90 0 0" opacity="1" position="-10 .55 0" src="#wall" repeat="5 5"></a-box>
+      
+      <!--wall 3-->
+      <a-box static-body height="20" width="1" depth="15" rotation="-90 -90 0" opacity="1" position="0 .55 10" src="#wall" repeat="5 5"></a-box>
+      
+      <a-box static-body height="20" width="3" depth="1" rotation="-90 -90 0" opacity="1" position="0 .3 10" src="#door" repeat="1 1"></a-box>
+          
+      <a-box static-body height="3" width=".05" depth="10" rotation="-90 -90 0" opacity="1" position="0 .55 9.5" src="#door" repeat="1 1"></a-box>
+    
+      <!--wall 4-->
+      <a-box static-body height="20" width="1" depth="15" rotation="-90 90 0" opacity="1" position="0 .55 -10" src="#wall" repeat="5 5"></a-box>
+      
+      <!--middle-->
+      <a-cylinder static-body height=".01" width="2" depth=".5" radius="1" rotation="0 0 0" opacity="1" position="0 .55 0" color="black" repeat="5 5"></a-cylinder>--!>
+      
+      <!--ceiling-->
+      <a-box static-body height="20" width="20" depth="20" rotation="-90 0 0" opacity="1" position="0 18 0" src="https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FTexturesCom_OrnamentsMoorishPainted0149_S.jpg?1535612289431"></a-box>
+      
+        <!--pillars-->
+      <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="9 0 9" src="#door" repeat="5 5"></a-cylinder>
+      <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="9 0 -9" src="#door" repeat="5 5"></a-cylinder>
+      <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="-9 0 9" src="#door" repeat="5 5"></a-cylinder>
+      <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="-9 0 -9" src="#door" repeat="5 5"></a-cylinder>
+      
+          <a-entity position="-3.2 0 -5.7">
+                                  <!--piano body-->
+            <a-box color="black"
+              width=".8" height="2.8" depth="2"
+              position="11 .4 -1.8" rotation="0 45 0"
+              static-body></a-box>
+      
+                                      <!--piano platform-->
+            <a-box color="black"
+              width="1" height="1.8" depth="2"
+              position="10.9 .4 -1.7" rotation="0 45 0"
+              static-body></a-box>
+      
+                                      <!--notes-->
+            <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2F4dcefe2f364dab857aa595e49b77483f--blank-sheet-music-sheet-music-for-piano.jpg?1501558461009"
+              width=".25" height=".3"
+              position="10.8 1.6 -1.25" rotation="0 135 0"
+              static-body></a-plane>
+            <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2F4dcefe2f364dab857aa595e49b77483f--blank-sheet-music-sheet-music-for-piano.jpg?1501558461009"
+              width=".25" height=".3"
+              position="10.9 1.6 -1.25" rotation="0 -45 0"
+              static-body></a-plane>
+            <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2F4dcefe2f364dab857aa595e49b77483f--blank-sheet-music-sheet-music-for-piano.jpg?1501558461009"
+              width=".25" height=".3"
+              position="10.8 1.6 -1.25" rotation="0 -45 0"
+              static-body></a-plane>
+      
+      <!--paper holder-->
+            <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2FTexturesCom_AudioEquipment0047_1_S.jpg?1501555751924"
+              width="1.7" height=".15" repeat="0 3"
+              position="10.67 1.44 -1.5" rotation="-90 -45 0"
+              static-body></a-plane>
+      
+          <!--keys-->
+            <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2FTexturesCom_AudioEquipment0047_2_S.jpg?1501682700107"
+              width="1.7" height=".15" repeat="2 1"
+              position="10.6 1.32 -1.4" rotation="-90 -45 0"
+              static-body></a-plane>
       
     </a-entity>
-    <!--wall 1-->
-    <a-box static-body src="#wall" height="20" width="1" depth="15" rotation="-90 0 0" position="10 .55 0" repeat="5 5"></a-box>
-    
-    <!--wall 2-->
-    <a-box static-body height="20" width="1" depth="15" rotation="-90 0 0" opacity="1" position="-10 .55 0" src="#wall" repeat="5 5"></a-box>
-    
-    <!--wall 3-->
-    <a-box static-body height="20" width="1" depth="15" rotation="-90 -90 0" opacity="1" position="0 .55 10" src="#wall" repeat="5 5"></a-box>
-    
-    <a-box static-body height="20" width="3" depth="1" rotation="-90 -90 0" opacity="1" position="0 .3 10" src="#door" repeat="1 1"></a-box>
-        
-    <a-box static-body height="3" width=".05" depth="10" rotation="-90 -90 0" opacity="1" position="0 .55 9.5" src="#door" repeat="1 1"></a-box>
-  
-    <!--wall 4-->
-    <a-box static-body height="20" width="1" depth="15" rotation="-90 90 0" opacity="1" position="0 .55 -10" src="#wall" repeat="5 5"></a-box>
-    
-    <!--middle-->
-    <a-cylinder static-body height=".01" width="2" depth=".5" radius="1" rotation="0 0 0" opacity="1" position="0 .55 0" color="black" repeat="5 5"></a-cylinder>--!>
-    
-    <!--ceiling-->
-    <a-box static-body height="20" width="20" depth="20" rotation="-90 0 0" opacity="1" position="0 18 0" src="https://cdn.glitch.com/3c14c345-6498-4f48-9ef3-2bc1dd164a68%2FTexturesCom_OrnamentsMoorishPainted0149_S.jpg?1535612289431"></a-box>
-    
-      <!--pillars-->
-    <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="9 0 9" src="#door" repeat="5 5"></a-cylinder>
-    <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="9 0 -9" src="#door" repeat="5 5"></a-cylinder>
-    <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="-9 0 9" src="#door" repeat="5 5"></a-cylinder>
-    <a-cylinder static-body height="16" width="2" depth=".5" radius="1.6" rotation="0 0 0" opacity="1" position="-9 0 -9" src="#door" repeat="5 5"></a-cylinder>
-    
-        <a-entity position="-3.2 0 -5.7">
-                                <!--piano body-->
-          <a-box color="black"
-             width=".8" height="2.8" depth="2"
-             position="11 .4 -1.8" rotation="0 45 0"
-             static-body></a-box>
-    
-                                    <!--piano platform-->
-          <a-box color="black"
-             width="1" height="1.8" depth="2"
-             position="10.9 .4 -1.7" rotation="0 45 0"
-             static-body></a-box>
-    
-                                     <!--notes-->
-          <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2F4dcefe2f364dab857aa595e49b77483f--blank-sheet-music-sheet-music-for-piano.jpg?1501558461009"
-             width=".25" height=".3"
-             position="10.8 1.6 -1.25" rotation="0 135 0"
-             static-body></a-plane>
-          <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2F4dcefe2f364dab857aa595e49b77483f--blank-sheet-music-sheet-music-for-piano.jpg?1501558461009"
-             width=".25" height=".3"
-             position="10.9 1.6 -1.25" rotation="0 -45 0"
-             static-body></a-plane>
-          <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2F4dcefe2f364dab857aa595e49b77483f--blank-sheet-music-sheet-music-for-piano.jpg?1501558461009"
-             width=".25" height=".3"
-             position="10.8 1.6 -1.25" rotation="0 -45 0"
-             static-body></a-plane>
-    
-    <!--paper holder-->
-          <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2FTexturesCom_AudioEquipment0047_1_S.jpg?1501555751924"
-             width="1.7" height=".15" repeat="0 3"
-             position="10.67 1.44 -1.5" rotation="-90 -45 0"
-             static-body></a-plane>
-    
-        <!--keys-->
-          <a-plane src="https://cdn.glitch.com/105d6107-d2ec-4d60-9bab-37c17cb42f41%2FTexturesCom_AudioEquipment0047_2_S.jpg?1501682700107"
-             width="1.7" height=".15" repeat="2 1"
-             position="10.6 1.32 -1.4" rotation="-90 -45 0"
-             static-body></a-plane>
-    
-  </a-entity>
-    <!--frame with photo 1-->
-  <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#photo1" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
-  <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
-  <a-image src="#exp1" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
-    
-  <!--frame with photo 2-->
-  <a-image src="#frame1" position="0 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
-  <a-image src="#photo2" position="0 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#frame2" position="0 1.4 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
-  <a-image src="#exp2" position="0 1.4 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
-    
-<!--frame with photo 3-->
-  <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="3.6" height="3.6"></a-image>
-  <a-image src="#photo3" position="4.3 4 -9.29" rotation="0 0 0" width="2.6" height="2.6"></a-image>
-  <a-image src="#frame2" position="4.3 1.6 -9.3" rotation="0 0 0" width="3.6" height="1"></a-image>
-  <a-image src="#exp3" position="4.3 1.6 -9.29" rotation="0 0 0" width="3" height="0.9"></a-image> 
-  <a-entity rotation="0 -90 0">
-    
-    <!--frame with photo 4-->
-  <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#photo4" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
-  <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
-  <a-image src="#exp4" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
-    
-  <!--frame with photo 5-->
-  <a-image src="#frame1" position="0 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
-  <a-image src="#photo5" position="0 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#frame2" position="0 1.4 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
-  <a-image src="#exp5" position="0 1.4 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
-    
-    <!--frame with photo 6-->
-  <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="3.6" height="3.6"></a-image>
-  <a-image src="#photo6" position="4.3 4 -9.29" rotation="0 0 0" width="2.6" height="2.6"></a-image>
-  <a-image src="#frame2" position="4.3 1.6 -9.3" rotation="0 0 0" width="3.6" height="1"></a-image>
-  <a-image src="#exp6" position="4.3 1.6 -9.29" rotation="0 0 0" width="3" height="0.9"></a-image> 
-  </a-entity>
-    
-    
+      <!--frame with photo 1-->
+    <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#photo1" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
+    <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
+    <a-image src="#exp1" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
+      
+    <!--frame with photo 2-->
+    <a-image src="#frame1" position="0 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
+    <a-image src="#photo2" position="0 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#frame2" position="0 1.4 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
+    <a-image src="#exp2" position="0 1.4 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
+      
+  <!--frame with photo 3-->
+    <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="3.6" height="3.6"></a-image>
+    <a-image src="#photo3" position="4.3 4 -9.29" rotation="0 0 0" width="2.6" height="2.6"></a-image>
+    <a-image src="#frame2" position="4.3 1.6 -9.3" rotation="0 0 0" width="3.6" height="1"></a-image>
+    <a-image src="#exp3" position="4.3 1.6 -9.29" rotation="0 0 0" width="3" height="0.9"></a-image> 
+    <a-entity rotation="0 -90 0">
+      
+      <!--frame with photo 4-->
+    <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#photo4" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
+    <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
+    <a-image src="#exp4" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
+      
+    <!--frame with photo 5-->
+    <a-image src="#frame1" position="0 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
+    <a-image src="#photo5" position="0 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#frame2" position="0 1.4 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
+    <a-image src="#exp5" position="0 1.4 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
+      
+      <!--frame with photo 6-->
+    <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="3.6" height="3.6"></a-image>
+    <a-image src="#photo6" position="4.3 4 -9.29" rotation="0 0 0" width="2.6" height="2.6"></a-image>
+    <a-image src="#frame2" position="4.3 1.6 -9.3" rotation="0 0 0" width="3.6" height="1"></a-image>
+    <a-image src="#exp6" position="4.3 1.6 -9.29" rotation="0 0 0" width="3" height="0.9"></a-image> 
+    </a-entity>
+      
+      
     <a-entity rotation="0 90 0">
-          <!--frame with photo 7-->
-  <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#photo7" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
-  <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
-  <a-image src="#exp7" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
-        <!--frame with photo 8-->
-  <a-image src="#frame1" position="0 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
-  <a-image src="#photo8" position="0 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#frame2" position="0 1.4 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
-  <a-image src="#exp8" position="0 1.4 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
-        <!--frame with photo 9-->
-  <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="3.6" height="3.6"></a-image>
-  <a-image src="#photo9" position="4.3 4 -9.29" rotation="0 0 0" width="2.6" height="2.6"></a-image>
-  <a-image src="#frame2" position="4.3 1.6 -9.3" rotation="0 0 0" width="3.6" height="1"></a-image>
-  <a-image src="#exp9" position="4.3 1.6 -9.29" rotation="0 0 0" width="3" height="0.9"></a-image>
-  </a-entity>
-    
+            <!--frame with photo 7-->
+    <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#photo7" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
+    <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
+    <a-image src="#exp7" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
+          <!--frame with photo 8-->
+    <a-image src="#frame1" position="0 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
+    <a-image src="#photo8" position="0 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#frame2" position="0 1.4 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
+    <a-image src="#exp8" position="0 1.4 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
+          <!--frame with photo 9-->
+    <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="3.6" height="3.6"></a-image>
+    <a-image src="#photo9" position="4.3 4 -9.29" rotation="0 0 0" width="2.6" height="2.6"></a-image>
+    <a-image src="#frame2" position="4.3 1.6 -9.3" rotation="0 0 0" width="3.6" height="1"></a-image>
+    <a-image src="#exp9" position="4.3 1.6 -9.29" rotation="0 0 0" width="3" height="0.9"></a-image>
+    </a-entity>
+      
     <a-entity rotation="0 180 0">
-      <!--frame with photo 10-->
-  <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#photo10" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
-  <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
-  <a-image src="#exp10" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
-        <!--frame with photo 11-->
-  <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
-  <a-image src="#photo11" position="4.3 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
-  <a-image src="#frame2" position="4.3 1.5 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
-  <a-image src="#exp11" position="4.3 1.5 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
-  </a-entity>
-    
-    
-    
+        <!--frame with photo 10-->
+    <a-image src="#frame1" position="-4.3 4 -9.3" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#photo10" position="-4.3 4 -9.29" rotation="0 0 0" width="2" height="2"></a-image>
+    <a-image src="#frame2" position="-4.3 1.9 -9.3" rotation="0 0 0" width="3" height="1"></a-image>
+    <a-image src="#exp10" position="-4.3 1.9 -9.29" rotation="0 0 0" width="2.6" height="0.9"></a-image>
+          <!--frame with photo 11-->
+    <a-image src="#frame1" position="4.3 4 -9.3" rotation="0 0 0" width="4" height="4"></a-image>
+    <a-image src="#photo11" position="4.3 4 -9.29" rotation="0 0 0" width="3" height="3"></a-image>
+    <a-image src="#frame2" position="4.3 1.5 -9.3" rotation="0 0 0" width="4" height="1"></a-image>
+    <a-image src="#exp11" position="4.3 1.5 -9.29" rotation="0 0 0" width="3.6" height="0.9"></a-image>
+    </a-entity>
+      
     <a-camera position="0 1.5 5" look-controls>
-        <!-- default camera height location -->
-        <!-- position the cursor in front of objects -->
-        <!-- cursor has a 10 second timeout for auto click -->
-        <a-cursor position="0 0 -.5" fuse="true" timeout="10"></a-cursor>
-      </a-camera>
+      <!-- default camera height location -->
+      <!-- position the cursor in front of objects -->
+      <!-- cursor has a 10 second timeout for auto click -->
+      <a-cursor position="0 0 -.5" fuse="true" timeout="10"></a-cursor>
+    </a-camera>
     
   </a-scene>
   
@@ -309,13 +307,6 @@
     splash.parentNode.removeChild(splash);
   }
   vrButton.addEventListener('click', enter);
-  </script>
-  
-  <script>
-    var sound = new Howl({
-      src: ['https://cdn.glitch.com/d43d9fac-8322-4763-8cf5-d67541748537%2Fmuseum.m4a?1540252504978']
-      });
-    sound.play();
   </script>
   
 </body>
